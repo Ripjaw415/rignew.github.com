@@ -42,32 +42,24 @@ html(lang='en')
                             a.nav-link.py-3.px-0.px-lg-3.rounded.js-scroll-trigger(href='#contact') Contact
 
         // Masthead
-        header.masthead.bg-primary.text-white.text-center
+        header.masthead.bg-secondary.text-black.text-center
             .container.d-flex.align-items-center.flex-column
                 // Masthead Avatar Image
-                .col-md-6.col-lg-9.mb-5
-                    img.img-fluid.mb-5(src='assets/img/logo.jpg', alt='')
+                br
+                br
+                br
+                br
+                .col-md-6.col-lg-9.mb-1
+                    img.img-fluid.mb-1(src='assets/img/logo.png', alt='')
                 // Masthead Heading
-                // Icon Divider
-                .divider-custom.divider-light
-                    .divider-custom-line
-                    .divider-custom-icon
-                        i.fas.fa-star
-                    .divider-custom-line
                 // Masthead Subheading
-                p.masthead-subheading.font-weight-light.mb-0 A local shoe cleaning service
+                h2.masthead-heading.mb-5 A local shoe cleaning service
 
         // Portfolio Section
         section#portfolio.page-section.portfolio
             .container
                 // Portfolio Section Heading
                 h2.page-section-heading.text-center.text-uppercase.text-secondary.mb-0 Portfolio
-                // Icon Divider
-                .divider-custom
-                    .divider-custom-line
-                    .divider-custom-icon
-                        i.fas.fa-star
-                    .divider-custom-line
                 // Portfolio Grid Items
                 .row.justify-content-center
                     // Portfolio Item 1
@@ -77,7 +69,7 @@ html(lang='en')
                                 .portfolio-item-caption-content.text-center.text-white
                                     i.fas.fa-plus.fa-3x
                             img.img-fluid(src='assets/img/portfolio/shoe1before.jpg', alt='')
-                            h2.text-center.text-uppercase.text-secondary.mb-0 Before
+                            h2.nptext-center.text-uppercase.text-secondary.mb-0 Before
                     // Portfolio Item 2
                     .col-md-6.col-lg-6.mb-5
                         .portfolio-item.mx-auto()
@@ -92,13 +84,9 @@ html(lang='en')
         section#about.page-section.bg-primary.text-white.mb-0
             .container
                 // About Section Heading
+                br
                 h2.page-section-heading.text-center.text-uppercase.text-white About
                 // Icon Divider
-                .divider-custom.divider-light
-                    .divider-custom-line
-                    .divider-custom-icon
-                        i.fas.fa-star
-                    .divider-custom-line
                 // About Section Content
                 .row
                     .col-lg-4.ml-auto
@@ -108,51 +96,16 @@ html(lang='en')
                         p.lead
                             | You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!
                 // About Section Button
-                .text-center.mt-4
-                    a.btn.btn-xl.btn-outline-light(href='https://startbootstrap.com/theme/freelancer/')
-                        i.fas.fa-download.mr-2
-                        | Free Download!
 
         // Contact Section
         section#contact.page-section
             .container
                 // Contact Section Heading
                 h2.page-section-heading.text-center.text-uppercase.text-secondary.mb-0 Contact Me
-                // Icon Divider
-                .divider-custom
-                    .divider-custom-line
-                    .divider-custom-icon
-                        i.fas.fa-star
-                    .divider-custom-line
-                // Contact Section Form
-                .row
-                    .col-lg-8.mx-auto
-                        // To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19.
-                        form#contactForm(name='sentMessage', novalidate='novalidate')
-                            .control-group
-                                .form-group.floating-label-form-group.controls.mb-0.pb-2
-                                    label Name
-                                    input#name.form-control(type='text', placeholder='Name', required='required', data-validation-required-message='Please enter your name.')
-                                    p.help-block.text-danger
-                            .control-group
-                                .form-group.floating-label-form-group.controls.mb-0.pb-2
-                                    label Email Address
-                                    input#email.form-control(type='email', placeholder='Email Address', required='required', data-validation-required-message='Please enter your email address.')
-                                    p.help-block.text-danger
-                            .control-group
-                                .form-group.floating-label-form-group.controls.mb-0.pb-2
-                                    label Phone Number
-                                    input#phone.form-control(type='tel', placeholder='Phone Number', required='required', data-validation-required-message='Please enter your phone number.')
-                                    p.help-block.text-danger
-                            .control-group
-                                .form-group.floating-label-form-group.controls.mb-0.pb-2
-                                    label Message
-                                    textarea#message.form-control(rows='5', placeholder='Message', required='required', data-validation-required-message='Please enter a message.')
-                                    p.help-block.text-danger
                             br
-                            #success
-                            .form-group
-                                button#sendMessageButton.btn.btn-primary.btn-xl(type='submit') Send
+                            .text-center
+                               a.btn.btn-primary.btn-xl(href='mailto:groom.ian03@gmail.com') Contact Me
+                            
 
         // Footer
         footer.footer.text-center
@@ -168,14 +121,12 @@ html(lang='en')
                     // Footer Social Icons
                     .col-lg-4.mb-5.mb-lg-0
                         h4.text-uppercase.mb-4 Around the Web
-                        a.btn.btn-outline-light.btn-social.mx-1(href='#!')
-                            i.fab.fa-fw.fa-facebook-f
-                        a.btn.btn-outline-light.btn-social.mx-1(href='#!')
-                            i.fab.fa-fw.fa-twitter
-                        a.btn.btn-outline-light.btn-social.mx-1(href='#!')
-                            i.fab.fa-fw.fa-linkedin-in
-                        a.btn.btn-outline-light.btn-social.mx-1(href='#!')
-                            i.fab.fa-fw.fa-dribbble
+                        a.btn.btn-outline-primary.btn-social.mx-1(href='https://www.instagram.com')
+                            i.fab.fa-fw.fa-instagram
+                        a.btn.btn-outline-primary.btn-social.mx-1(href='mailto:groom.ian03@gmail.com')
+                            i.fab.fa-fw.fa-gmail
+                        a.btn.btn-outline-primary.btn-social.mx-1(href='sms:+17202803137')
+                            i.fab.fa-fw.fa-phone
                     // Footer About Text
                     .col-lg-4
                         h4.text-uppercase.mb-4 About Freelancer
