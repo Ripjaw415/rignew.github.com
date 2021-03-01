@@ -60,25 +60,48 @@ html(lang='en')
             .container
                 // Portfolio Section Heading
                 h2.page-section-heading.text-center.text-uppercase.text-secondary.mb-0 Gallery
+                hr
                 // Portfolio Grid Items
+                h3.text-center
+                    | Standard Scrub Example
                 .row.justify-content-center
                     // Portfolio Item 1
                     .col-md-6.col-lg-6.mb-5
                         .portfolio-item.mx-auto()
-                            .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
+                            .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-90.w-85
                                 .portfolio-item-caption-content.text-center.text-white
                                     i.fas.fa-plus.fa-3x
                             img.img-fluid(src='assets/img/portfolio/shoe1before.jpg', alt='')
                             h2.text-center.text-uppercase.text-secondary.mb-0 Before
+
                     // Portfolio Item 2
                     .col-md-6.col-lg-6.mb-5
                         .portfolio-item.mx-auto()
-                            .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
+                            .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-90.w-85
                                 .portfolio-item-caption-content.text-center.text-white
                                     i.fas.fa-plus.fa-3x
                             img.img-fluid(src='assets/img/portfolio/shoe1after.jpg', alt='')
                             h2.text-center.text-uppercase.text-secondary.mb-0 After
-                  
+                hr
+                h3.text-center 
+                    | Deep Scrub Example
+                .row.justify-content-center
+                    // Portfolio Item 1
+                    .col-md-6.col-lg-6.mb-5
+                        .portfolio-item.mx-auto()
+                            .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-90.w-85
+                                .portfolio-item-caption-content.text-center.text-white
+                                    i.fas.fa-plus.fa-3x
+                            img.img-fluid(src='assets/img/portfolio/shoe2before.jpg', alt='')
+                            h2.text-center.text-uppercase.text-secondary.mb-0 Before
+                    // Portfolio Item 2
+                    .col-md-6.col-lg-6.mb-5
+                        .portfolio-item.mx-auto()
+                            .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-90.w-85
+                                .portfolio-item-caption-content.text-center.text-white
+                                    i.fas.fa-plus.fa-3x
+                            img.img-fluid.lg-12(src='assets/img/portfolio/shoe2after.jpg', alt='')
+                            h2.text-center.text-uppercase.text-secondary.mb-0 After
 
         // About Section
         section#about.page-section.bg-primary.text-white.mb-0
@@ -90,11 +113,10 @@ html(lang='en')
                 // About Section Content
                 .row
                     .col-lg-4.ml-auto
-                        p.lead
-                            | Durango Shoe Scrubbers is a shoe cleaning service 
+                        h5.text-white.lead.font-main
+                            | Durango Shoe Scrubbers is a new and small shoe cleaning service. We service local people only and put a lot of care into our services. We can always use your support for us and other small and local buisnesses.
                     .col-lg-4.mr-auto
-                        p.lead
-                            | You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!
+                        img.img-fluid.mx-auto.d-block(src='assets/img/aboutimage.jpg')
                 hr
                 br
                 // About Section Button
@@ -110,20 +132,27 @@ html(lang='en')
                             | Standard Scrub
                         h3.text-center
                             | $20
-                        img.img-fluid.mx-auto.d-block(src='assets/img/standardscrub.jpeg')
-                        p.lead 
-                            | Test       
+                        img.img-fluid.mx-auto.d-block(src='')
+                        p.lead.gray-800 
+                            | Standard cleaning of shoes, light dirt from everday use or minor accidents.      
                     .col-lg-4.mr-auto 
                         h2.text-center
                             | Deep Scrub
                         h3.text-center
                             | $28   
-                        img.img-fluid.mx-auto.d-block(src='assets/img/deepscrub.jpeg')
-                        p.lead
-                            |  Test
+                        img.img-fluid.mx-auto.d-block(src='')
+                        p.lead.gray-300
+                            | The deep scrub is to get out stains or clean extra soiled shoes.
+                h2.text-center
+                    | Waterproof Spray
+                h3.text-center
+                    | $5
+                .col-lg-4.mx-auto
+                    p.lead.text-center
+                        |  Applies a spray that creates a durable, breathable barrier that effectively repels liquids and stains
                 br
                 .text-center
-                    a.btn.btn-primary.btn-xl(href='mailto:groom.ian03@gmail.com') Contact Me
+                    a.btn.btn-primary.btn-xl(href='mailto:groom.ian03@gmail.com?subject=New Order!') Contact Me
                 hr
                 br
 
@@ -144,7 +173,7 @@ html(lang='en')
                         h4.text-uppercase.mb-4 Around the Web
                         a.btn.btn-outline-primary.btn-social.mx-1(href='https://www.instagram.com/durangoshoescrubbers/?hl=en')
                             i.fab.fa-fw.fa-instagram
-                        a.btn.btn-outline-primary.btn-social.mx-1(href='mailto:groom.ian03@gmail.com')
+                        a.btn.btn-outline-primary.btn-social.mx-1(href='mailto:groom.ian03@gmail.com?subject=New Order!')
                             i.fab.fa-fw.fa-envelope.far
                         a.btn.btn-outline-primary.btn-social.mx-1(href='sms:+17202803137')
                             i.fab.fa-fw.fa-phone.fas
@@ -152,6 +181,7 @@ html(lang='en')
                     .col-lg-4
                         h4.text-uppercase.mb-4 About Us
                         p.lead.mb-0
+                            | Date started: 3/2/20
                             | 
         // Copyright Section
         div.copyright.py-4.text-center.text-white
